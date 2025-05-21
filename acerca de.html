@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acerca de</title>
+</head>
+<body>
+    <section id="acerca-de">
+    <h2>Acerca de</h2>
+    <p>Esta sección muestra un mapa con el polígono de la zona de interés.</p>
+    <div id="map"></div>
+  </section>
+  <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&callback=initMap" async defer></script>
+
+  <script>
+    // Coordenadas del polígono (ejemplo)
+    const coordenadasPoligono = [
+      { lat: 4.65, lng: -74.1 },
+      { lat: 4.66, lng: -74.1 },
+      { lat: 4.66, lng: -74.0 },
+      { lat: 4.65, lng: -74.0 }
+    ];
+
+    function initMap() {
+      // Crear el mapa centrado en la zona de interés
+      const mapa = new google.maps.Map(document.getElementById("map"), {
+        zoom: 13,
+        center: { lat: 4.655, lng: -74.05 }
+      });
+
+      // Crear el polígono y añadirlo al mapa
+      const poligono = new google.maps.Polygon({
+        paths: coordenadasPoligono,
+        strokeColor: "#FF0000",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#FF0000",
+        fillOpacity: 0.35
+      });
+
+      poligono.setMap(mapa);
+    }
+  </script>
+</body>
+</html>
