@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Autor</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .foto-autor {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
+    .biografia {
+      max-width: 700px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Autor</h1>
+
+  <!-- Cambia "mifoto.jpg" por el nombre real del archivo de tu foto -->
+  <img src="mifoto.jpg" alt="Foto del autor" class="foto-autor" />
+
+  <div class="biografia">
+    <p>
+      Hola, mi nombre es <strong>Michael Ramírez</strong>. Soy el autor de este proyecto que tiene como objetivo explorar y dar a conocer la historia del barrio El Listón, ubicado en la ciudad de Bogotá. Me apasionan la tecnología, la historia urbana y
