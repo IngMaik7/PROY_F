@@ -3,35 +3,39 @@
      width: 75hw;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .barra-navegacion {
-  background-color: #333;
+  background-color: #c90f0f;
   padding: 10px 0;
 }
 
 .barra-navegacion ul {
   list-style: none;
-  margin: 0;
+  margin: 5;
   padding: 0;
   display: flex;
   justify-content: center;
 }
 
 .barra-navegacion li {
-  margin: 0 15px;
+  margin: 20px;
 }
 
 .barra-navegacion a {
   color: white;
-  text-decoration: none;
+  text-decoration:dotted;
   font-weight: bold;
 }
 
 .barra-navegacion a:hover {
-  text-decoration: underline;
+  text-decoration:solid;
+}
+
+.seccion-contenido {
+  display: none;
+  padding: 20px;
+  border-top: 1px solid #72ac58;
+}
+
+.seccion-contenido.activa {
+  display:contents;
 }

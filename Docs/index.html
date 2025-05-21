@@ -14,32 +14,35 @@
   <script src="Programa.js"></script>
     <header>
         <nav class="barra-navegacion">
-        <ul>
-        <li><a href="#acerca-de">Acerca de</a></li>
-        <li><a href="#descripcion">Descripción</a></li>
-        <li><a href="#autor">Autor</a></li>
-        </ul>
-        </nav>
+      <ul>
+        <li><a href="#" onclick="mostrarSeccion('acerca-de')">Acerca de</a></li>
+        <li><a href="#" onclick="mostrarSeccion('descripcion')">Descripción</a></li>
+        <li><a href="#" onclick="mostrarSeccion('autor')">Autor</a></li>
+      </ul>
+    </nav>
         <h1>Bienvenido al Barrio El Liston</h1>
       </header>
     
       <main>
-        <section id="acerca-de">
+        <section id="acerca-de" class="seccion-contenido oculto">
         <h2>Acerca de</h2>
-        <p>Veremos la inseguridad que tiene asotado a el sector Paloquemao.</p>
+        <p>Este proyecto trata de generar las zonas de mayor riesgo a los alrededores de Paloquemao, asi mismo ver 
+         donde los delincuentes pueden vender o soltar los elmentos hurtados.</p>
         </section>
 
-        <section id="descripcion">
+        <section id="descripcion" class="seccion-contenido oculto">
         <h2>Descripción</h2>
-        <p>Contenido de la sección Descripción.</p>
+        <p>En este proyecto se han utilizado dos tipos de lenguaje de programación uno es Java Script y el otro C+, con Java se utiliza la biblioteca Leflet
+          la cual nos ayuda con la visuaizacion de mapas y objetos espaciales que esta tiene contenidos. Tambien se usa HTML para la creación y estructuras de 
+          la pagina WEB.</p>
         </section>
 
-        <section id="autor">
+        <section id="autor" class="seccion-contenido oculto">
         <h2>Autor</h2>
         <p>Contenido de la sección Autor.</p>
         </section>
         <section>
-          <h2>Un lugar con historia </h2>
+          <h3>Un lugar con historia </h3>
           <p>
             El barrio El Listón, ubicado en la localidad 14 de Bogotá, Desarrollado en 
             las décadas de 1920 y 1930 sobre los terrenos de la antigua hacienda San Façon. 
