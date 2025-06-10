@@ -17,7 +17,7 @@ var poligono = L.polygon([
 var circle = L.circle([4.615326, -74.088624], {
     color: 'green',
     fillColor: '#f09',
-    fillOpacity: 0.5,
+    fillOpacity: 0.7,
     radius: 1500
 }).addTo(map);
 
